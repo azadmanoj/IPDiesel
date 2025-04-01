@@ -26,9 +26,9 @@ export default function Header() {
       <div className="container mx-auto flex flex-wrap justify-between items-center px-4">
         <Link href="/" className="relative group flex items-center space-x-2">
           <img
-            src="/logo.png"
+            src="/Iplogo.png"
             alt="IPDiesel Logo"
-            className="h-10 sm:h-12 transition-transform duration-300 group-hover:scale-105"
+            className="h-16 sm:h-20 md:h-24 transition-transform duration-300 group-hover:scale-105 object-contain"
           />
           <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-200 group-hover:w-full transition-all duration-300"></span>
         </Link>
