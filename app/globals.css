@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1f2969;
+    --foreground: #1f2969;
+  }
+}
+
+body {
+  background: linear-gradient(to bottom, #1f2969, #f8f8f8);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+
+/* Base styles for links/buttons if needed */
+a, button {
+  transition: all 0.2s ease-in-out; /* Keep basic transition */
+}
+
+/* Optional: Add scroll-behavior smooth */
+html {
+  scroll-behavior: smooth;
+}
